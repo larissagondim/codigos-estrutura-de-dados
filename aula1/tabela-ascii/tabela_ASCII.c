@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <ctype.h>
+#include "tabela_ASCII.h"
+
+void mostrar_tabela_ascii(void) {
+    printf("TABELA ASCII: \n");
+    printf("----------------------\n");
+    printf("DEC | CHAR | HEX | BIN\n");
+    printf("----------------------\n");
+
+    for (unsigned char i = 0; i < 255; i++) {
+        if (isprint(i)) printf("%3d | %4c | %#2x | %b\n", i, i, i, i);
+        else printf("%3d |      | %#2x | %b\n", i, i, i);
+    }
+}
