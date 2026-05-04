@@ -20,8 +20,12 @@ Os códigos estão organizados por aulas e exercícios. Cada pasta representa um
 | ----------------------- | ------------------------------------------------ |
 | `aula1/tabela-ascii`    | Programa que imprime a tabela ASCII         |
 | `aula2/eh_primo`        | Verificação de número primo                      |
+| `aula2/esfera` | Calcula a área e o volume de uma esfera |
 | `aula2/fibonacci`       | Cálculo do n-ésimo termo da sequência de Fibonacci                |
+| `aula2/leibniz` | Utiliza da fórmula de Leibniz com N fatores para calcular uma aproximação de pi |
 | `aula2/ponto_retangulo` | Verifica se um ponto está dentro de um retângulo |
+| `aula2/raízes equação` | Calcula as raízes de uma equação do segundo grau com passagem de parâmetros por referência |
+| `aula2/soma_impares` | Soma os números ímpares de 1 até 'n'|
 
 ---
 
@@ -73,7 +77,7 @@ Os códigos abordam temas como:
 * [x] Conceitos básicos de C
 * [ ] Vetores e matrizes
 * [ ] Funções e recursão
-* [ ] Ponteiros
+* [X] Ponteiros
 * [ ] Alocação dinâmica de memória
 * [ ] Listas encadeadas
 * [ ] Pilhas
