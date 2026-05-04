@@ -1,3 +1,10 @@
+/*
+ * Nome do arquivo: soma_impares_main.c
+ * Autoria: Larissa Gondim
+ * Data: 29/04/2026
+ * Descrição: Programa que soma todos os ímpares num intervalo de 1 a 'n'
+ * Versão: 1.0
+ */
 #include <stdio.h>
 
 // protótipo de função:

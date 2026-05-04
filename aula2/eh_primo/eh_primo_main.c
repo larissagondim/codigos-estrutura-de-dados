@@ -1,3 +1,10 @@
+/*
+ * Nome do arquivo: eh_primo_main.c
+ * Autoria: Larissa Gondim
+ * Data: 29/04/2026
+ * Descrição: Função que verifica se o número é primo
+ * Versão: 1.0
+ */
 #include <stdio.h>
 // protótipo de funções 
 int eh_primo(int n);

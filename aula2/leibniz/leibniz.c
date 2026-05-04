@@ -1,3 +1,10 @@
+/*
+ * Nome do arquivo: leibniz.c
+ * Autoria: Larissa Gondim
+ * Data: 29/04/2026
+ * Descrição: Função que utiliza da fórmula de Leibniz com N fatores para calcular uma aproximação de pi
+ * Versão: 1.0
+ */
 #include <stdio.h>
 #include "leibniz.h"
 

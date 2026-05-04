@@ -1,3 +1,11 @@
+/*
+ * Nome do arquivo: dentro_ret.c
+ * Autoria: Larissa Gondim
+ * Data: 29/04/2026
+ * Descrição: Função que verifica se um ponto está dentro de um retângulo
+ * Versão: 1.0
+ */
+
 #include <stdio.h>
 #include "dentro_ret.h"
 

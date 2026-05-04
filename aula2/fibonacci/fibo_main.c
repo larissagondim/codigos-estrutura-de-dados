@@ -1,3 +1,11 @@
+/*
+ * Nome do arquivo: fibo_main.c
+ * Autor: Seu Nome
+ * Data: 29/04/2026
+ * Descrição: Programa que calcula o n-ésimo termo de Fibonacci
+ * Versão: 1.0
+ */
+
 #include <stdio.h>
 // protótipo de funções:
 int fibo(int);

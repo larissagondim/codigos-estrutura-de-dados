@@ -1,3 +1,10 @@
+/*
+ * Nome do arquivo: raizes.c
+ * Autoria: Larissa Gondim
+ * Data: 04/05/2026
+ * Descrição: Função que calcula as raízes de uma equação do segundo grau com passagem de parâmetros por referência
+ * Versão: 1.0
+ */
 #include <stdio.h>
 #include <math.h>
 #include "raizes.h" 
