@@ -26,7 +26,8 @@ Os códigos estão organizados por aulas e exercícios. Cada pasta representa um
 | `aula2/ponto_retangulo` | Verifica se um ponto está dentro de um retângulo |
 | `aula2/raízes equação` | Calcula as raízes de uma equação do segundo grau com passagem de parâmetros por referência |
 | `aula2/soma_impares` | Soma os números ímpares de 1 até 'n'|
-
+| `aula3/nome_idade` | Lê nomes e idades de 'n' pessoas e salva em um txt |
+| `aula3/maior_18` | Mostra nome de pessoas maiores de 18 anos em um txt |
 ---
 
 ## Estrutura dos Códigos
