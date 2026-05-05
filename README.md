@@ -77,6 +77,7 @@ Os códigos abordam temas como:
 
 * [x] Conceitos básicos de C
 * [ ] Vetores e matrizes
+* [x] Arquivos
 * [ ] Funções e recursão
 * [X] Ponteiros
 * [ ] Alocação dinâmica de memória
