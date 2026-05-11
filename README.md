@@ -28,6 +28,8 @@ Os códigos estão organizados por aulas e exercícios. Cada pasta representa um
 | `aula2/soma_impares` | Soma os números ímpares de 1 até 'n'|
 | `aula3/nome_idade` | Lê nomes e idades de 'n' pessoas e salva em um txt |
 | `aula3/maior_18` | Mostra nome de pessoas maiores de 18 anos em um txt |
+| `aula4` | Operações com vetores |
+| `aula5` | Operações com listas |
 ---
 
 ## Estrutura dos Códigos
@@ -76,7 +78,7 @@ Os códigos abordam temas como:
 ## Progresso
 
 * [x] Conceitos básicos de C
-* [ ] Vetores e matrizes
+* [x] Vetores e matrizes
 * [x] Arquivos
 * [ ] Funções e recursão
 * [X] Ponteiros
