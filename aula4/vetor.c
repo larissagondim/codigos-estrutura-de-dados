@@ -2,7 +2,7 @@
  * Autor: Larissa Gondim
  * Data: 06/05/2026
  * Descrição: Manipulando matrizes com alocação dinâmica de memória
- * Versão: 1.0
+ * Versão: 1.1
  */
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,7 +22,7 @@ int main(void) {
     int **p = (int**)malloc(N * sizeof(int*));
     if(!p) return 1;
     // verificando se a alocação foi realizada propriamente
-    for(i = 0; i < 8; i++) {
+    for(i = 0; i < N; i++) {
         p[i] =  (int*) malloc(N*sizeof(int));
         if(!p[i]) break;         
     }
