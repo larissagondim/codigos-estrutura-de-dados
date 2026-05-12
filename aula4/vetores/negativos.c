@@ -1,8 +1,8 @@
 /* Nome do arquivo: negativos.c                                                                                                                                                                                                                   * Nome do arquivo: vetor.c
  * Autor: Larissa Gondim
- * Data: 06/05/2026
- * Descrição: Manipulando matrizes com alocação dinâmica de memória
- * Versão: 1.1
+ * Data: 11/05/2026
+ * Descrição: Conta quantos são os negativos num vetor
+ * Versão: 1.0
  */
 
 // includes
@@ -13,7 +13,7 @@
 /* @brief função que retorna quantos são os números negativos armazenados no vetor
  * @param n: tamanho do vetor
  * @param *vet: ponteiro para o vetor
- * @return o número de negativos na matriz
+ * @return o número de valores negativos no vetor
  * */
 int negativos(int n, float *vet);
 
@@ -49,6 +49,14 @@ int main(void) {
     return 0;
 }
 
+int alocou(float *vet) {
+    if (vet == NULL) {
+        printf("Erro: falha na alocação de memória!\n");
+        return 0;
+    }
+    return 1;
+}
+
 int negativos(int n, float *vet) {
     int i, n_negativos = 0;
     for(i = 0; i < n; i++) {
@@ -64,10 +72,3 @@ void preenche(float *vet, int n) {
     }
 }
 
-int alocou(float *vet) {
-    if (vet == NULL) {
-        printf("Erro: falha na alocação de memória!\n");
-        return 0;
-    }
-    return 1;
-}
