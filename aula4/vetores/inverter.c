@@ -2,7 +2,7 @@
  * Autoria: Larissa Gondim
  * Data: 12/05/2026
  * Descrição: código que recebe um vetor de números inteiros e inverte a ordem dos seus elementos
- * Versão: 1.0
+ * Versão: 1.1
  * */
 
 // includes (apenas as bibliotecas padrão)
@@ -23,7 +23,7 @@ int alocou(int *vet);
  * @param n tamanho do vetor
  * @return nada pois é void
  * */
-void inverte(int *vet, int n);
+void inverte(int n, int *vet);
 
 /* 'mostra'
  * @brief função que mostra o vetor digitado
@@ -31,7 +31,7 @@ void inverte(int *vet, int n);
  * @param n tamanho do vetor
  * @return nada pois é void
  * */
-void mostra(int *vet, int n);
+void mostra(int n, int *vet);
 
 /* 'preenche'
  * @brief função que preenche o vetor dinamicamente alocado
@@ -39,32 +39,36 @@ void mostra(int *vet, int n);
  * @param n tamanho do vetor
  * @return nada pois é void
  * */
-void preenche(int *vet, int n);
+void preenche(int n, int *vet);
 
 // ---------- MAIN ----------
 int main(void) {
     int n;
     printf("Insira o tamanho do vetor em análise: ");
     scanf("%d", &n);
+    while(n < 0) {
+        printf("Insira um tamanho válido (positivo): ");
+        scanf("%d", &n);
+    }
     int *p = (int *) malloc(n * sizeof(int));
 
     // verificando se a alocação foi efetiva
-    if(alocou(p)) 
+    if(!(alocou(p))) 
         exit(1);
 
     // preenchendo o vetor
-    preenche(p, n);
+    preenche(n, p);
     
     // moostrando um vetor antes
     printf("\nVetor antes da inversão: ");
-    mostra(p, n);
+    mostra(n, p);
 
     // invertendo os valores
-    inverte(p, n);
+    inverte(n, p);
 
     // mostrando o vetor após a inversão
     printf("\nVetor após a inversão: ");
-    mostra(p, n);
+    mostra(n, p);
 
     // liberando o espaço na memória
     free(p);
@@ -73,34 +77,35 @@ int main(void) {
 
 int alocou(int *vet) {
     if(vet == NULL) 
-	printf("\nA alocação de espaço na memória não foi efetiva");
-        return 0;
+	   return 0;
     return 1;
 }
 
 // corpo das funções auxiliares
-void inverte(int *vet, int n) {
-     int i, temp = 0;
-     for(i = 0; i < n/2; i++) {
-	temp = vet[n - i - 1];
-	vet[n - i - 1] = vet[i];
-	vet[i] = temp;
+void inverte(int n, int *vet) {
+    int i, temp = 0;
+    for(i = 0; i < n/2; i++) {
+        temp = vet[n - i - 1];
+        vet[n - i - 1] = vet[i];
+        vet[i] = temp;
     }
 }
 
-void mostra(int *vet, int n) {
+void mostra(int n, int *vet) {
     int i;
     printf("\n{");
-    for(i = 0; i < n-1; i++) {
-        printf("%d, ", vet[i]);
+    if(n> 0) {
+        for(i = 0; i < n-1; i++) {
+            printf("%d, ", vet[i]);
+        }
+        printf("%d}", vet[i]);
     }
-    printf("%d}", vet[i]);
 } 
 
-void preenche(int *vet, int n) {
+void preenche(int n, int *vet) {
     int i;
     for(i = 0; i < n; i++) {
-	printf("\nInsira o dígito de número '%d': ", (i+1));
-	scanf("%d", &vet[i]);
+        printf("\nInsira o dígito de número '%d': ", (i+1));
+        scanf("%d", &vet[i]);
     }
 }
