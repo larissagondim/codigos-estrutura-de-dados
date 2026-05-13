@@ -11,7 +11,7 @@
 
 /* 'alocou'
  * @brief função que veriifica se a alocação dinâmica ocorreu de maneira efetiva
- * @param *vet conteúdo do ponteiro que aponta pro vetor
+ * @param *vet o ponteiro para o vetor 
  * @return 1 se alocou propriamente, 0 caso contrário
  * */
 int alocou(int *vet);
@@ -19,7 +19,7 @@ int alocou(int *vet);
 // protótipo das funções auxiliares
 /* 'inverte'
  * @brief função que recebe um vetor de números inteiros e inverte a ordem de seus elementos
- * @param *vet conteudo do ponteiro que aponta para o vetor
+ * @param *vet o ponteiro para o vetor 
  * @param n tamanho do vetor
  * @return nada pois é void
  * */
@@ -27,7 +27,7 @@ void inverte(int n, int *vet);
 
 /* 'mostra'
  * @brief função que mostra o vetor digitado
- * @param *vet conteúdo do ponteiro que aponta pro vetor
+ * @param *vet o ponteiro para o vetor 
  * @param n tamanho do vetor
  * @return nada pois é void
  * */
@@ -35,7 +35,7 @@ void mostra(int n, int *vet);
 
 /* 'preenche'
  * @brief função que preenche o vetor dinamicamente alocado
- * @param *vet conteúdo do ponteiro que aponta pro vetor
+ * @param *vet o ponteiro para o vetor 
  * @param n tamanho do vetor
  * @return nada pois é void
  * */
@@ -59,7 +59,7 @@ int main(void) {
     // preenchendo o vetor
     preenche(n, p);
     
-    // moostrando um vetor antes
+    // mostrando um vetor antes
     printf("\nVetor antes da inversão: ");
     mostra(n, p);
 
@@ -98,7 +98,7 @@ void mostra(int n, int *vet) {
         for(i = 0; i < n-1; i++) {
             printf("%d, ", vet[i]);
         }
-        printf("%d}", vet[i]);
+        printf("%d}\n", vet[i]);
     }
 } 
 
