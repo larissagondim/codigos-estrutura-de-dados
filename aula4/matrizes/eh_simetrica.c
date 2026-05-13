@@ -1,8 +1,8 @@
-/* Nome do arquivo: eh_simetrica.c                                                                                                                                                                                                                   * Nome do arquivo: conta_vogal.c
+/* Nome do arquivo: eh_simetrica.c                                                                                                                                                                                                                  
  * Autoria: Larissa Gondim
  * Data: 12/05/2026
  * Descrição: Programa que verifica se matriz é quadrada e simétrica
- * Versão: 1.0
+ * Versão: 1.1
  */
 
 // includes (apenas as bibliotecas padrão)
@@ -29,6 +29,14 @@ int eh_quadrada_e_simetrica(int **p, int m, int n);
 */
 void mostra_matriz(int **matriz, int m, int n);
 
+/* 'libera'
+* @brief função que libera matriz na memória
+* @param **p ponteiro que aponta para a matriz na memória
+* @param m número de linhas da matriz
+* @return nada pois é void
+*/
+void libera_matriz(int **matriz, int m);
+
 // ---------- MAIN ----------
 int main(void) {
     // buscando o tamanho da matriz de acordo com a inserção do usuário e verificando se a entrada é válida
@@ -54,49 +62,41 @@ int main(void) {
     // verificando se as linhas foram alocadas sucessivamente
     if(matriz == NULL) {
         printf("\nErro na alocação de memória das linhas da matriz!");
-        return 1;
+        exit(1);
     }
 
     // caso as linhas tenham sido alocadas propriamente, agora para a alocação das respectivas colunas
-    for(int i = 0; i < m; i++) 
-        matriz[i] = (int *) malloc(n * sizeof(int));
-
-    // verificando, agora, se as colunas foram alocadas propriamente
-    for(int i = m - 1; i >= 0; i--) {
-        if(matriz[i] == NULL) {
-            printf("\nErro na alocação da linha %d", i);
-            for(int j = 0; j < i; j++) 
-                free(matriz[j]);
-            free(matriz);
-            return 1;
+    for (int i = 0; i < m; i++) {
+        matriz[i] = (int *)malloc(n * sizeof(int));
+        if (matriz[i] == NULL) {
+            libera_matriz(matriz, i);
+            exit(1);
         }
     }
 
     // preenchendo a matriz
-    printf("\nPreencendo a matriz %dx%d", m, n);
+    printf("\nPreenchendo a matriz %dx%d", m, n);
     for(int i = 0; i < m; i++) {
         for(int j = 0; j < n; j++) {
-            printf("\nmatriz[%d][%d]: ", i, j);
+            printf("\nElemento matriz[%d][%d]: ", i, j);
             scanf("%d", &matriz[i][j]);
         }
     }
     // mostrando matriz em análise:
-    printf("\nMatriz[%d][%d]: ", m, n);
+    printf("\nMatriz %dx%d: ", m, n);
     mostra_matriz(matriz, m, n);
 
     // verificando se é quadrada e simétrica verificando simetria
     if(eh_quadrada_e_simetrica(matriz, m, n)) 
         printf("\nA matriz é quadrada e simétrica!");
-    else if(eh_quadrada_e_simetrica && (m == n))
-        printf("\nApesar de quadrada, a matriz não é simétrica");
-    else
-        printf("\nA matriz não é quadrada, portanto, não pode ser simétrica.");
-
+    else {
+        if(m == n)
+            printf("\nApesar de quadrada, a matriz não é simétrica");
+        else
+            printf("\nA matriz não é quadrada, portanto, é impossível ser simétrica");
+    }
     // liberando o espaço na memória
-    int i;
-    for(i = m - 1; i >= 0; i--) 
-        free(matriz[i]);
-    free(matriz);
+    libera_matriz(matriz, m);
 
     return 0;
 }
@@ -108,10 +108,8 @@ int eh_quadrada_e_simetrica(int **matriz, int m, int n) {
 
     for(int i = 0; i < m; i++) {
         for(int j = 0; j < n; j++) {
-            if(matriz[i][j] != matriz[j][i]) {
+            if(matriz[i][j] != matriz[j][i]) 
                 return 0;
-                break;
-            }
         }
     }
     
@@ -126,4 +124,11 @@ void mostra_matriz(int **matriz, int m, int n) {
             printf("%d, ", matriz[i][j]);
         printf("%d]", matriz[i][j]);
     }
+}
+
+void libera_matriz(int **matriz, int m) {
+    if (matriz == NULL) return;
+    for (int i = 0; i < m; i++) 
+        free(matriz[i]);
+    free(matriz);
 }
