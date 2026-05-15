@@ -35,7 +35,6 @@ Os códigos estão organizados por aulas e por temas. Cada pasta contém um prob
 | `aula5` | Exercícios básicos com listas |
 | `aula6` | Exercícios de lista simulada e inserção ordenada |
 | `extra` | Exercício de matriz com tabuada |
-| `prova` | Exercícios adicionais de listas e soma de elementos |
 
 ---
 
