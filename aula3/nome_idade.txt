@@ -1,0 +1,5 @@
+Nome: joaozinho | Idade: 10
+Nome: josefa | Idade: 60
+Nome: larissa | Idade: 18
+Nome: marcos | Idade: 40
+Nome: mariazinha | Idade: 10
