@@ -26,9 +26,7 @@ Os códigos estão organizados por aulas e por temas. Cada pasta contém um prob
 | `aula2/ponto_retangulo` | Verifica se um ponto está dentro de um retângulo |
 | `aula2/raizes_equacao` | Calcula raízes de equações do segundo grau |
 | `aula2/soma_impares` | Soma números ímpares de 1 até N |
-| `aula3/nome_idade` | Lê nomes e idades de pessoas e grava em arquivo |
-| `aula3/maior_18` | Filtra pessoas maiores de 18 anos e salva em arquivo |
-| `aula3/ordenar_nomes` | Ordena uma lista de nomes |
+| `aula3` | Exercícios de leitura, escrita e modificação de arquivos |
 | `aula4/matrizes` | Verifica se matriz é simétrica |
 | `aula4/strings` | Conta vogais em uma string |
 | `aula4/vetores` | Exercícios com vetores: avaliação, derivada, inversão, contagem de negativos e pares |
@@ -71,15 +69,15 @@ O repositório contém exercícios sobre:
 ## Progresso
 
 * [x] Conceitos básicos de C
-* [x] Leitura e escrita de dados
+* [x] Manipulação de arquivos
 * [x] Operações com vetores
 * [x] Operações com matrizes
 * [x] Processamento de strings
 * [x] Modularização com funções e headers
 * [x] Ponteiros básicos
-* [x] Exercícios de listas simples
-* [ ] Recursão
+* [x] Exercícios de listas simples (ordenada, circular...)
 * [x] Alocação dinâmica de memória
+* [ ] Recursão
 * [ ] Estruturas de dados avançadas: pilhas, filas, árvores e grafos
 * [ ] Algoritmos de ordenação avançados
 
