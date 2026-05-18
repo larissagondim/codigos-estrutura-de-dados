@@ -31,7 +31,7 @@ Os códigos estão organizados por aulas e por temas. Cada pasta contém um prob
 | `aula4/strings` | Conta vogais em uma string |
 | `aula4/vetores` | Exercícios com vetores: avaliação, derivada, inversão, contagem de negativos e pares |
 | `aula5` | Exercícios básicos com listas |
-| `aula6` | Exercícios de lista simulada e inserção ordenada |
+| `aula6` | Exercícios de lista simulada com enfoque listas ordenadas e listas circulares |
 | `extra` | Exercício de matriz com tabuada |
 
 ---
@@ -70,13 +70,15 @@ O repositório contém exercícios sobre:
 
 * [x] Conceitos básicos de C
 * [x] Manipulação de arquivos
+* [x] Alocação dinâmica de memória
 * [x] Operações com vetores
 * [x] Operações com matrizes
 * [x] Processamento de strings
 * [x] Modularização com funções e headers
 * [x] Ponteiros básicos
-* [x] Exercícios de listas simples (ordenada, circular...)
-* [x] Alocação dinâmica de memória
+* [x] Listas ordenadas
+* [x] Listas circulares
+* [ ] Outras listas
 * [ ] Recursão
 * [ ] Estruturas de dados avançadas: pilhas, filas, árvores e grafos
 * [ ] Algoritmos de ordenação avançados
