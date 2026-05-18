@@ -32,7 +32,7 @@ Os códigos estão organizados por aulas e por temas. Cada pasta contém um prob
 | `aula4/vetores` | Exercícios com vetores: avaliação, derivada, inversão, contagem de negativos e pares |
 | `aula5` | Exercícios básicos com listas |
 | `aula6` | Exercícios de lista simulada com enfoque listas ordenadas e listas circulares |
-| `extra` | Exercício de matriz com tabuada |
+| `extra` | Exercícios a mais que fiz para fins de aprendizado |
 
 ---
 
