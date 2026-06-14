@@ -30,9 +30,12 @@ Os códigos estão organizados por aulas e por temas. Cada pasta contém um prob
 | `aula4/matrizes` | Verifica se matriz é simétrica |
 | `aula4/strings` | Conta vogais em uma string |
 | `aula4/vetores` | Exercícios com vetores: avaliação, derivada, inversão, contagem de negativos e pares |
-| `aula5` | Exercícios básicos com listas |
-| `aula6` | Exercícios de lista simulada com enfoque listas ordenadas e listas circulares |
-| `extra` | Exercícios a mais que fiz para fins de aprendizado |
+| `aula5` | Exercícios básicos com listas simplesmente encadeadas |
+| `aula6` | Exercícios de lista simulada com enfoque em listas ordenadas e listas circulares |
+| `aula10` | Implementação de lista duplamente encadeada (`lista_encadeada.h` e `lista_encadeada.c`) |
+| `aula12` | Implementação de Pilha (`pilha.h` e `pilha.c`) e Calculadora Pós-fixada (`calculadora_pos_fixada.c`) |
+| `extra` | Exercícios extras de fixação (maior valor, mescla sem duplicatas, matriz tabuada e soma de elementos) |
+| `prova` | Exercícios e soluções de questões práticas de provas e simulados |
 
 ---
 
@@ -62,7 +65,9 @@ O repositório contém exercícios sobre:
 * validação de números primos
 * manipulação de arquivos simples
 * ordenação básica de dados
-* implementação de listas e inserção ordenada
+* implementação de listas encadeadas (simples, duplas, circulares e simuladas) com inserção ordenada
+* estruturas de dados lineares: Pilhas (LIFO) e suas operações básicas (empilhar, desempilhar, ver topo)
+* avaliação de expressões matemáticas (calculadora pós-fixada)
 
 ---
 
@@ -78,9 +83,11 @@ O repositório contém exercícios sobre:
 * [x] Ponteiros básicos
 * [x] Listas ordenadas
 * [x] Listas circulares
-* [ ] Outras listas
+* [x] Outras listas (Listas encadeadas simples e duplas)
+* [x] Pilhas (Estrutura de dados)
+* [ ] Filas
 * [ ] Recursão
-* [ ] Estruturas de dados avançadas: pilhas, filas, árvores e grafos
+* [ ] Outras estruturas de dados avançadas: árvores e grafos
 * [ ] Algoritmos de ordenação avançados
 
 > *Obs: esta lista reflete o conteúdo atual do repositório e será atualizada conforme novos exercícios forem adicionados.*
