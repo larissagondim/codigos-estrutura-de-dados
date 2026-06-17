@@ -33,7 +33,9 @@ Os códigos estão organizados por aulas e por temas. Cada pasta contém um prob
 | `aula5` | Exercícios básicos com listas simplesmente encadeadas |
 | `aula6` | Exercícios de lista simulada com enfoque em listas ordenadas e listas circulares |
 | `aula10` | Implementação de lista duplamente encadeada (`lista_encadeada.h` e `lista_encadeada.c`) |
+| `aula11` | Teoria e conceitos de listas circulares e listas heterogêneas (`listas_circulares.md` e `listaheterogenea.md`) |
 | `aula12` | Implementação de Pilha (`pilha.h` e `pilha.c`) e Calculadora Pós-fixada (`calculadora_pos_fixada.c`) |
+| `aula13` | Implementação de Fila estática circular (`fila.h` e `fila.c`) e Verificação de Palíndromo (`eh_palindromo.c`) |
 | `extra` | Exercícios extras de fixação (maior valor, mescla sem duplicatas, matriz tabuada e soma de elementos) |
 | `prova` | Exercícios e soluções de questões práticas de provas e simulados |
 
@@ -65,9 +67,9 @@ O repositório contém exercícios sobre:
 * validação de números primos
 * manipulação de arquivos simples
 * ordenação básica de dados
-* implementação de listas encadeadas (simples, duplas, circulares e simuladas) com inserção ordenada
-* estruturas de dados lineares: Pilhas (LIFO) e suas operações básicas (empilhar, desempilhar, ver topo)
-* avaliação de expressões matemáticas (calculadora pós-fixada)
+* implementação de listas encadeadas (simples, duplas, circulares, simuladas e heterogêneas) com inserção ordenada
+* estruturas de dados lineares: Pilhas (LIFO) e Filas (FIFO) com suas respectivas operações básicas
+* avaliação de expressões matemáticas (calculadora pós-fixada) e verificação de palíndromos (utilizando filas)
 
 ---
 
@@ -83,9 +85,9 @@ O repositório contém exercícios sobre:
 * [x] Ponteiros básicos
 * [x] Listas ordenadas
 * [x] Listas circulares
-* [x] Outras listas (Listas encadeadas simples e duplas)
+* [x] Outras listas (Listas encadeadas simples, duplas e heterogêneas)
 * [x] Pilhas (Estrutura de dados)
-* [ ] Filas
+* [x] Filas
 * [ ] Recursão
 * [ ] Outras estruturas de dados avançadas: árvores e grafos
 * [ ] Algoritmos de ordenação avançados
