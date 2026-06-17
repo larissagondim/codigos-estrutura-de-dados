@@ -2,7 +2,7 @@
  * Autoria: Larissa Gondim
  * Data: 15/06/2026
  * Descrição: implementação das funções da fila estática circular
- * Versão: 1.0
+ * Versão: 1.1
  */
 
 #include "fila.h"
