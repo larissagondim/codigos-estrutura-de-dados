@@ -12,8 +12,8 @@ Fila *cria_fila(void) {
     Fila *f = (Fila*)malloc(sizeof(Fila));
     if (f == NULL)
         return NULL;
-    f->inicio = 0;
-    f->fim = 0;
+    f->inicio = -1;
+    f->fim = -1;
     return f;
 }
 
@@ -36,7 +36,7 @@ int fila_cheia(Fila *fila) {
 int fila_vazia(Fila *fila) {
     if (fila == NULL)
         return 1;
-    return (fila->inicio == fila->fim);
+    return (fila->inicio == -1 && fila->fim == -1);
 }
 
 // enfileirar
