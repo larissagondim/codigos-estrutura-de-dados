@@ -14,30 +14,34 @@ O objetivo deste repositório é servir como apoio aos estudos, prática de prog
 
 ## Organização do Repositório
 
-Os códigos estão organizados por aulas e por temas. Cada pasta contém um problema específico ou um conjunto de exercícios relacionados.
+Os códigos foram reorganizados por assunto/tema, em vez de por aulas. A estrutura atual é a seguinte:
 
-| Pasta | Descrição |
-| --- | --- |
-| `aula1/tabela-ascii` | Imprime a tabela ASCII |
-| `aula2/eh_primo` | Verifica se um número é primo |
-| `aula2/esfera` | Calcula área e volume de uma esfera |
-| `aula2/fibonacci` | Calcula termos da sequência de Fibonacci |
-| `aula2/leibniz` | Aproximação de π pela série de Leibniz |
-| `aula2/ponto_retangulo` | Verifica se um ponto está dentro de um retângulo |
-| `aula2/raizes_equacao` | Calcula raízes de equações do segundo grau |
-| `aula2/soma_impares` | Soma números ímpares de 1 até N |
-| `aula3` | Exercícios de leitura, escrita e modificação de arquivos |
-| `aula4/matrizes` | Verifica se matriz é simétrica |
-| `aula4/strings` | Conta vogais em uma string |
-| `aula4/vetores` | Exercícios com vetores: avaliação, derivada, inversão, contagem de negativos e pares |
-| `aula5` | Exercícios básicos com listas simplesmente encadeadas |
-| `aula6` | Exercícios de lista simulada com enfoque em listas ordenadas e listas circulares |
-| `aula10` | Implementação de lista duplamente encadeada (`lista_encadeada.h` e `lista_encadeada.c`) |
-| `aula11` | Teoria e conceitos de listas circulares e listas heterogêneas (`listas_circulares.md` e `listaheterogenea.md`) |
-| `aula12` | Implementação de Pilha (`pilha.h` e `pilha.c`) e Calculadora Pós-fixada (`calculadora_pos_fixada.c`) |
-| `aula13` | Implementação de Fila estática circular (`fila.h` e `fila.c`) e Verificação de Palíndromo (`eh_palindromo.c`) |
-| `extra` | Exercícios extras de fixação (maior valor, mescla sem duplicatas, matriz tabuada e soma de elementos) |
-| `prova` | Exercícios e soluções de questões práticas de provas e simulados |
+```text
+Arquivos/
+  ASCII/
+Listas/
+  Simples/
+  Encadeadas/
+  Circulares/
+Filas/
+Pilhas/
+Matrizes/
+Strings/
+Vetores/
+Ordenacao/
+Matematica/
+  Geometria/
+  Primalidade/
+  Fibonacci/
+  Leibniz/
+  Equacoes/
+  SomaImpares/
+Provas/
+Outros/
+  Palindromos/
+```
+
+Essa organização foi feita para facilitar a navegação e manter os arquivos agrupados por tópico, preservando os nomes originais dos arquivos.
 
 ---
 
@@ -67,30 +71,32 @@ O repositório contém exercícios sobre:
 * validação de números primos
 * manipulação de arquivos simples
 * ordenação básica de dados
-* implementação de listas encadeadas (simples, duplas, circulares, simuladas e heterogêneas) com inserção ordenada
-* estruturas de dados lineares: Pilhas (LIFO) e Filas (FIFO) com suas respectivas operações básicas
-* avaliação de expressões matemáticas (calculadora pós-fixada) e verificação de palíndromos (utilizando filas)
+* implementação de listas encadeadas (simples, duplas, circulares, simuladas e heterogêneas)
+* estruturas de dados lineares: Pilhas (LIFO) e Filas (FIFO)
+* avaliação de expressões matemáticas (calculadora pós-fixada)
+* verificação de palíndromos utilizando filas
+* exercícios de provas e atividades complementares
 
 ---
 
 ## Progresso
 
 * [x] Conceitos básicos de C
-* [x] Manipulação de arquivos
-* [x] Alocação dinâmica de memória
+* [x] Modularização com funções e headers
+* [x] Ponteiros básicos
 * [x] Operações com vetores
 * [x] Operações com matrizes
 * [x] Processamento de strings
-* [x] Modularização com funções e headers
-* [x] Ponteiros básicos
-* [x] Listas ordenadas
-* [x] Listas circulares
-* [x] Outras listas (Listas encadeadas simples, duplas e heterogêneas)
-* [x] Pilhas (Estrutura de dados)
+* [x] Listas
+* [x] Pilhas
 * [x] Filas
+* [x] Ordenação simples
+* [x] Matemática e cálculos numéricos
+* [x] Manipulação de arquivos
 * [ ] Recursão
-* [ ] Outras estruturas de dados avançadas: árvores e grafos
-* [ ] Algoritmos de ordenação avançados
+* [ ] Árvores
+* [ ] Grafos
+* [ ] Ordenação avançada
 
 > *Obs: esta lista reflete o conteúdo atual do repositório e será atualizada conforme novos exercícios forem adicionados.*
 
