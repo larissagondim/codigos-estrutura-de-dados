@@ -33,6 +33,15 @@ class LinkedList:
             print(temp.value)
             temp = temp.next
     
+    # 'make_empty()'
+    # makes a list empty
+    # step-by-step:
+    # -> makes both head and tail nodes point to None, since it's now empty
+    # -> makes length go to 0
+    def make_empty(self):
+        self.head = None
+        self.tail = None
+        self.length = 0
     # 'append()'
     # the append method is going to:
     # - add a new node to the end of the list
@@ -70,7 +79,7 @@ class LinkedList:
     # - add it to the end of the list
     # def insert(self, index, value);
         
-# using the linked list class and testing
+# using the linked list class and testingg
 my_linked_list = LinkedList(4)
 my_linked_list.append(2)
 print(f"Head: {my_linked_list.head.value}")
