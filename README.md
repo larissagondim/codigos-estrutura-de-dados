@@ -37,6 +37,7 @@ Matematica/
   Equacoes/
   SomaImpares/
 Provas/
+Python/
 Outros/
   Palindromos/
 ```
@@ -76,6 +77,7 @@ O repositório contém exercícios sobre:
 * avaliação de expressões matemáticas (calculadora pós-fixada)
 * verificação de palíndromos utilizando filas
 * exercícios de provas e atividades complementares
+* implementações, também, em python
 
 ---
 
