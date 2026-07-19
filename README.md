@@ -38,6 +38,7 @@ Matematica/
   SomaImpares/
 Provas/
 Python/
+Recursividade/
 Outros/
   Palindromos/
 ```
@@ -75,6 +76,7 @@ O repositório contém exercícios sobre:
 * implementação de listas encadeadas (simples, duplas, circulares, simuladas e heterogêneas)
 * estruturas de dados lineares: Pilhas (LIFO) e Filas (FIFO)
 * avaliação de expressões matemáticas (calculadora pós-fixada)
+* problemas com aplicação de recursividade
 * verificação de palíndromos utilizando filas
 * exercícios de provas e atividades complementares
 * implementações, também, em python
@@ -95,7 +97,7 @@ O repositório contém exercícios sobre:
 * [x] Ordenação simples
 * [x] Matemática e cálculos numéricos
 * [x] Manipulação de arquivos
-* [ ] Recursão
+* [X] Recursão
 * [ ] Árvores
 * [ ] Grafos
 * [ ] Ordenação avançada
