@@ -98,7 +98,7 @@ O repositório contém exercícios sobre:
 * [x] Matemática e cálculos numéricos
 * [x] Manipulação de arquivos
 * [X] Recursão
-* [ ] Árvores
+* [x] Árvores
 * [ ] Grafos
 * [ ] Ordenação avançada
 
