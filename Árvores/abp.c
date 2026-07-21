@@ -2,7 +2,7 @@
  * Autoria: Larissa Gondim
  * Data: 20/07/2026
  * Descrição: arquivo da implementação das funções de árvore binária de pesquisa
- * Versão: 1.0
+ * Versão: 1.1
  */
 
 #include "abp.h"
@@ -19,7 +19,7 @@ int eh_vazia(tAbp T) {
 
 // 'busca'
 tAbp busca(tAbp T, int dado) {
-    tAbp achou;
+
     if(T == NULL) return NULL;
 
     if(T->info == dado) return T; // encontrou na raiz
