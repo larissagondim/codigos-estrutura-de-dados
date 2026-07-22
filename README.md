@@ -99,7 +99,7 @@ O repositório contém exercícios sobre:
 * [x] Manipulação de arquivos
 * [X] Recursão
 * [x] Árvores
-* [ ] Grafos
+* [X] Grafos
 * [ ] Ordenação avançada
 
 > *Obs: esta lista reflete o conteúdo atual do repositório e será atualizada conforme novos exercícios forem adicionados.*
